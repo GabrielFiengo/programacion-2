@@ -1,0 +1,27 @@
+// Considerar dos numeros.cpp : Defines the entry point for the console application.
+// Autor: Edgar Gabriel Fiengo Sejas
+// Fecha: 25 de marzo 2014
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main ()
+{
+	int num1,num2,res;
+	cout<<"\t\t\tConsiderar dos numeros\n\n";
+	cout<<"Ingrese num1: ";
+	cin>>num1;
+	cout<<"Ingrese num2: ";
+	cin>>num2;
+	if ((num1%2==0) && (num2%2==0))
+	res=num1+num2;
+	else
+	res=num1*num2;
+	cout<<"El resultado es: "<<res;
+	getch();
+
+	
+}
