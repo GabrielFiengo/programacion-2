@@ -1,0 +1,39 @@
+// Programas Basicos.cpp : Defines the entry point for the console application.
+// Autor: Gabriel Fiengo
+// Fecha: 15/04/2014
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{
+int a,b,opcion,sumar,restar,division,multiplicacion;
+cout<<"Ingrese a: ";
+cin>>a;
+cout<<"Ingrese b: ";
+cin>>b;
+do
+{
+cout<<"1 sumar\n";
+cout<<"2 restar\n";
+cout<<"3 multiplicacion\n";
+cout<<"4 division\n";
+cout<<"0 salir\n";
+cin>>opcion;
+if(opcion==1)
+{sumar=a+b;
+cout<<"La suma es: "<<sumar<<"\n";}
+if(opcion==2)
+{restar=a-b;
+cout<<"La resta es: "<<restar<<"\n";}
+if(opcion==3)
+{multiplicacion=a*b;
+cout<<"La multiplicacion es: "<<multiplicacion<<"\n";}
+if(opcion==4)
+{division=a/b;
+cout<<"La division es: "<<division<<"\n";}
+}
+while(opcion!=0);
+getch();
+}
