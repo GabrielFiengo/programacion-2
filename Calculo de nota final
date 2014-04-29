@@ -1,0 +1,52 @@
+//Calculo de nota final.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{float p1,p2,prac,final,nf,faltas;
+char resp;
+{
+do
+{
+do
+{cout<<"Ingrese p1: ";
+cin>>p1;
+}
+while(p1>100||p1<0);
+{
+do
+{
+cout<<"Ingrese p2: ";
+cin>>p2;
+}
+while(p2>100||p2<0);
+do
+{
+cout<<"Ingrese prac: ";
+cin>>prac;
+}
+while(prac>100||prac<0);
+{
+cout<<"Ingrese numero de faltas: ";
+cin>>faltas;
+if(faltas>10)
+cout<<"Fin";
+}
+
+do
+{cout<<"Ingrese final: ";
+cin>>final;
+}
+while(final>100||final<0);
+nf=((p1+p2)/2)*0.4+prac*0.2+final*0.4;
+cout<<"Nota final: "<<nf;
+cout<<"Quiere ingresar mas datos(s/n)";
+cin>>resp; 
+} while (resp!='n');
+getch();
+}
