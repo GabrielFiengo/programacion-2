@@ -1,0 +1,211 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int main()
+{
+    int opcion=0;
+	int desea=0;
+	float sumatotalvotos=0;
+	float votosxpostulante[10];
+	for (int i=0;i<=9;i++)
+	{
+		votosxpostulante[i]=0;
+	}
+	while(1==1)
+	{
+		desea=0;
+		system("cls");
+		system ("color 70");
+		cout<<"\t\t**************************************************\n";
+		cout<<"\t\t****************  OPINION PUBLICA  ***************\n";
+		cout<<"\t\t**************************************************\n\n";
+		cout<<"Este programa es una encuesta interna de la UPSA que le permitira dar un voto\ncomo ciudadano en esta eleccion presidencial del futuro gobierno boliviano.\n\n";
+		cout<<"1) Evo Morales Aima\n";
+		cout<<"2) Samuel Doria Medina\n";
+		cout<<"3) Ruben Costas Aguilera\n";
+		cout<<"4) Adriana Gil\n";
+		cout<<"5) Juan del Granado\n";
+		cout<<"6) Felix Patzi\n";
+		cout<<"7) Jorge Tuto Quiroga\n";
+		cout<<"8) Luis Revilla\n\n";
+
+		cout<<"Elija el numero del postulante para ver\n";
+		cout<<"su informacion y acceder a la votacion:";
+		cin>>opcion;
+		cout<<"\n";
+		switch(opcion)
+		{
+		case 1:cout<<"Elegiste a Evo Morales Aima\n\n";
+			 cout<<"Evo Morales, nacio.............\n\n";
+			 cout<<"Desea votar por Evo Morales?\n";
+			 cout<<"1)SI\n";
+			 cout<<"2)No\n";
+			 cin>>desea;
+			 if(desea==1)
+			 {
+				cout<<"Votaste por Evo Morales Aima\n\nPor favor presiona enter...";
+				votosxpostulante[0]++;
+			 }
+			else
+			{
+				cout<<"Presione enter para volver";
+			}
+			break;
+		case 2:cout<<"Elegiste a Samuel Doria Medina\n\n";
+			cout<<"Samuel Doria Medina, nacio........... \n\n";
+			cout<<"Desea votar por Samuel Doria Medina?\n";
+			cout<<"1)SI\n";
+			cout<<"2)No\n";
+			cin>>desea;
+		    if(desea==1)
+			{
+				cout<<"Votaste por Samuel Doria Medina\n\nPor favor presiona enter...";
+				votosxpostulante[1]++;
+			}
+			else
+			{
+				cout<<"Presione enter para volver";
+			}
+			break;
+		case 3:cout<<"Elegiste a Ruben Costas Aguilera\n\n";
+			cout<<"Ruben Costas, nacio..............\n\n";
+			cout<<"Desea votar por Ruben Costas Aguilera?\n";
+			cout<<"1)SI\n";
+			cout<<"2)No\n";
+			cin>>desea;
+		    if(desea==1)
+			{
+				cout<<"Votaste por Ruben Costas\n\nPor favor presiona enter...";
+				votosxpostulante[2]++;
+			}
+			else
+			{
+				cout<<"Presione enter para volver";
+			}
+			break;
+		case 4:
+			cout<<"Elegiste a Adriana Gil\n\n";
+			cout<<"Adriana Gil.-Nacio en Santa Cruz de la Sierra, el 22 de mayo de 1982.\nActualmente es diputada nacional. Es candidata a la presidencia y se basa en\nafirmar que los bolivianos voten por el cambio, no por un dictador\nesto en cuanto el actual gobierno.El Movimiento Democrata Social (MDS) es el\npartido al que representa y pretende ocupar el gobierno boliviano.\n\n";
+			cout<<"Desea votar por Adriana Gil?\n";
+			cout<<"1)SI\n";
+			cout<<"2)No\n";
+			cin>>desea;
+		    if(desea==1)
+			{
+				cout<<"Votaste por Adriana Gil";
+				votosxpostulante[3]++;
+			}
+			else
+			{
+				cout<<"Presione enter para volver\n\nPor favor presiona enter...";
+			}
+			break;
+		case 5:
+			cout<<"Elegiste a Juan del Granado\n\n";
+			cout<<"Juan del Granado, nacio...............\n\n";
+			cout<<"Desea votar por Juan del Granado?\n";
+			cout<<"1)SI\n";
+			cout<<"2)No\n";
+			cin>>desea;
+		    if(desea == 1)
+			{
+				cout<<"Votaste por Juan del Granado\n\n Por favor presiona enter...";
+				votosxpostulante[4]++;
+			}
+			else
+			{
+				cout<<"Presione enter para volver";
+			}
+			break;
+		case 6:
+			cout<<"Elegiste a Felix Patzi\n\n";
+			cout<<"Felix Patzi, nacio..............\n\n";
+			cout<<"Desea votar por Felix Patzi?\n";
+			cout<<"1)SI\n";
+			cout<<"2)No\n";
+			cin>>desea;
+		    if(desea==1)
+			{
+				cout<<"Votaste por Felix Patzi\n\nPor favor presiona enter...";
+				votosxpostulante[5]++;
+			}
+			else
+			{
+				cout<<"Presione enter para volver";
+			}
+			break;
+		case 7:
+			cout<<"Elegiste a Jorge Tuto Quiroga\n\n";
+			cout<<"Jorge Tuto Quiroga, nacio...............\n\n";
+			cout<<"Desea votar por Jorge Tuto Quiroga?\n";
+			cout<<"1)SI\n";
+			cout<<"2)No\n";
+			cin>>desea;
+		    if(desea==1)
+			{
+				cout<<"Votaste por Jorge Tuto Quiroga\n\nPor favor presiona enter...";
+				votosxpostulante[6]++;
+			}
+			else
+			{
+				cout<<"Presione enter para volver";
+			}
+			break;
+		case 8:
+			cout<<"Elegiste a Luis Revilla\n\n";
+			cout<<"Luis Revilla, nacio.............\n\n";
+			cout<<"Desea votar por Luis Revilla?\n";
+			cout<<"1)SI\n";
+			cout<<"2)No\n";
+			cin>>desea;
+		    if(desea==1)
+			{
+				cout<<"Votaste por Luis Revilla\n\nPor favor presiona enter...";
+				votosxpostulante[7]++;
+			}
+			else
+			{
+				cout<<"Presione enter para volver";
+			}
+			break;
+		case 10: 
+			cout<<"Votos de Evo Morales Aima: "<<votosxpostulante[0]<<"\n";
+			cout<<"Votos de Samuel Doria Medina: "<<votosxpostulante[1]<<"\n";
+			cout<<"Votos de Ruben Aguilera Costas: "<<votosxpostulante[2]<<"\n";
+			cout<<"Votos de Adrina Gil: "<<votosxpostulante[3]<<"\n";
+			cout<<"Votos de Juan del Granado: "<<votosxpostulante[4]<<"\n";
+			cout<<"Votos de Felix Patzi: "<<votosxpostulante[5]<<"\n";
+			cout<<"Votos de Jorge Tuto Quiroga: "<<votosxpostulante[6]<<"\n";
+			cout<<"Votos de Luis Revilla: "<<votosxpostulante[7]<<"\n";
+			cout<<"\n\n";
+
+			sumatotalvotos=0;
+
+			for (int i=0;i<=9;i++)
+			{
+				sumatotalvotos=sumatotalvotos+votosxpostulante[i];
+			}
+			cout<<"Porcentaje de votos de Evo Morales Aima: "<<(votosxpostulante[0]/sumatotalvotos)*100<<"%""\n";
+			cout<<"Porcentaje de votos de Samuel Doria Medina: "<<(votosxpostulante[1]/sumatotalvotos)*100<<"%""\n";
+			cout<<"Porcentaje de votos de Ruben Costas Aguilera: "<<(votosxpostulante[2]/sumatotalvotos)*100<<"%""\n";
+			cout<<"Porcentaje de votos de Adriana Gil: "<<(votosxpostulante[3]/sumatotalvotos)*100<<"%""\n";
+			cout<<"Porcentaje de votos de Juan del Granado: "<<(votosxpostulante[4]/sumatotalvotos)*100<<"%""\n";
+			cout<<"Porcentaje de votos de Felix Patzi: "<<(votosxpostulante[5]/sumatotalvotos)*100<<"%""\n";
+			cout<<"Porcentaje de votos de Jorge Tuto Quiroga: "<<(votosxpostulante[6]/sumatotalvotos)*100<<"%""\n";
+			cout<<"Porcentaje de votos de Luis Revilla: "<<(votosxpostulante[7]/sumatotalvotos)*100<<"%""\n";
+			break;
+		default: cout<<"Eleccion Incorrecta\n\n";
+			break;
+		}
+		if(opcion==11)
+		{
+			cout<<"Fin de Programa";
+			getch();
+			break;
+		}
+		getch();
+	}
+	return 0;
+}
